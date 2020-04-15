@@ -38,13 +38,9 @@ const useStyles = makeStyles((theme) => ({
 const Car = (props) => {
     const classes = useStyles();
 
-
     const carId = props.match.params.id
     const thisCar = cars[carId]
-    // const thisCar = cars.filter((car, i) => car[i].id === carId)
-
-    console.log(cars[carId].id)
-
+    
     return (
         <div className={classes.root}>
             <CssBaseline />
